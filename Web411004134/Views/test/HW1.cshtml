@@ -5,28 +5,30 @@
 
 <h2>HW1</h2>
 
-<form>
-    <p><h3>個人資料:</h3>
-    姓名:<input type="name" name="name" value="" /><br />
-    帳號:<input type="email" name="email" value="" /><br />
-    密碼:<input type="password" name="password" value="" /><br />
-    年齡:<input type="number" name="age" value="" /><br/>
-    </p>
-    <p>
-    性別:
-    <input type="radio" name="gender" value="A" />男
-    <input type="radio" name="gender" value="B" />女<br />
-    </p>
-    <p>
-    興趣:
-    <input type="checkbox" name="intr" value="true" />閱讀
-    <input type="checkbox" name="intr" value="true" />聽音樂
-    <input type="checkbox" name="intr" value="true" />玩遊戲<br/>
-    </p>
-    <p>
-    自我介紹:
-    <textarea name="aboutme"></textarea>
-    </p>
-
-
-</form>  
+@using (Html.BeginForm("Action","Controller",FormMethod.Post))
+{
+    <div>
+        <p>
+            <h3>個人資料:</h3>
+            姓名 : @Html.TextBox("name")<br />
+            帳號 : @Html.TextBox("email")<br />
+            密碼 : @Html.Password("password")<br />
+            年齡 : @Html.TextBox("age")<br />
+        </p>
+        <p>
+            性別 :
+            @Html.RadioButton("gender", "A")男
+            @Html.RadioButton("gender", "B")女<br />
+        </p>
+        <p>
+            興趣 :
+            @Html.CheckBox("reading")閱讀
+            @Html.CheckBox("music")聽音樂
+            @Html.CheckBox("gaming")玩遊戲<br />
+        </p>
+        <p>
+            自我介紹 : <br />
+            @Html.TextArea("about")
+        </p>
+    </div>
+}
