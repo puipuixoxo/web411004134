@@ -9,7 +9,7 @@ namespace Web411004134.Controllers
     public class testController : Controller
     {
         // GET: test
-        public ActionResult HW1()
+        public ActionResult HW3()
         {
             return View();
         }

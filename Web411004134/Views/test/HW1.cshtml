@@ -5,7 +5,7 @@
 
 <h2>HW1</h2>
 
-@using (Html.BeginForm("Action","Controller",FormMethod.Post))
+@using (Html.BeginForm("Action", "Controller", FormMethod.Post))
 {
     <div>
         <p>
@@ -17,18 +17,39 @@
         </p>
         <p>
             性別 :
-            @Html.RadioButton("gender", "A")男
-            @Html.RadioButton("gender", "B")女<br />
+            @Html.RadioButton("gender", "A") 男
+            @Html.RadioButton("gender", "B") 女<br />
         </p>
         <p>
             興趣 :
-            @Html.CheckBox("reading")閱讀
-            @Html.CheckBox("music")聽音樂
-            @Html.CheckBox("gaming")玩遊戲<br />
+            @Html.CheckBox("reading") 閱讀
+            @Html.CheckBox("music") 聽音樂
+            @Html.CheckBox("gaming") 玩遊戲<br />
         </p>
         <p>
             自我介紹 : <br />
             @Html.TextArea("about")
         </p>
+        <p>
+            <input type="submit" class=""/>
+            <input type="reset" class=""/>
+        </p>
     </div>
 }
+
+@{
+    var message = "hi";
+    var isStudent = true;
+}
+
+<p>
+    @message<br />
+    現在時間 : @DateTime.Now<br />
+</p>
+@if (true)
+　{
+    <p>是學生</p>
+　}else
+　{
+    <p>不是學生</p>
+　}
