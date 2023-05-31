@@ -15,7 +15,7 @@ namespace Web411004134.Models1
         public int Id{ get ; set ; }
 
         [Required(ErrorMessage = "請填寫姓名")]
-        [Display(Name = "姓名")]
+        [Display(Name = "Username")]
         [StringLength(5,MinimumLength =2,ErrorMessage ="請輸入2~5個字")]
         public string Username{ get ; set ; }
 
@@ -25,7 +25,7 @@ namespace Web411004134.Models1
         public string Number{ get ; set ; }
 
         [Required(ErrorMessage = "請填寫Email")]
-        [Display(Name = "Email")]
+        [Display(Name = "電子郵件")]
         [EmailAddress]
         public string Email{ get ; set ; }
 
