@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Web411004134.Models1.Partials
+namespace Web411004134.Models1
 {
     [MetadataType(typeof(StudentMetadata))]
     public partial class Student

@@ -152,6 +152,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models1\Partials\Student.cs" />
     <Compile Include="Models1\Student.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -225,9 +226,7 @@
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models1\Partials\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
